@@ -79,7 +79,7 @@ where to_date = '9999-01-01';
 
 
 SELECT COUNT(ce.emp_no), de.dept_no
---INTO dept_count
+INTO dept_count
 FROM current_emp as ce
 LEFT JOIN dept_emp as de
 ON ce.emp_no = de.emp_no
@@ -95,7 +95,7 @@ e.last_name,
     e.gender,
     s.salary,
     de.to_date
---INTO emp_info
+INTO emp_info
 FROM employees as e
 inner join salaries as s
 on (e.emp_no = s.emp_no)
@@ -142,7 +142,7 @@ SELECT ce.emp_no,
 ce.first_name,
 ce.last_name,
 d.dept_name
--- INTO dept_info
+INTO dept_info
 FROM current_emp as ce
 INNER JOIN dept_emp AS de
 ON (ce.emp_no = de.emp_no)
@@ -154,7 +154,7 @@ SELECT ce.emp_no,
 ce.first_name,
 ce.last_name,
 d.dept_name
--- INTO dept_info
+INTO dept_info
 FROM current_emp as ce
 INNER JOIN dept_emp AS de
 ON (ce.emp_no = de.emp_no)
