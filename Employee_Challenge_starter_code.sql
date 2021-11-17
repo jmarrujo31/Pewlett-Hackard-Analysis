@@ -1,3 +1,4 @@
+
 SELECT employees.emp_no, employees.first_name, employees.last_name, titles.title, titles.from_date, titles.to_date
 INTO retirement_titles
 FROM employees
